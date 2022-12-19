@@ -1,13 +1,9 @@
 function greet(name) {
-    if (!name) {
-        return 'Hello, my friend.'
-    }
+    const HELLO = 'Hello,'
 
-    if(name.toUpperCase() === name) {
-        return `HELLO ${name.toUpperCase()}!`
-    }
+    if (name == null) return HELLO + ' my friend.'
 
-    return `Hello, ${name}.`
+    return HELLO + ` ${name}.`
 }
 
 module.exports = greet;
