@@ -1,18 +1,16 @@
 const greet = require('./greeting')
 
-describe('TDD Kata', () => {
+describe('Greeting Kata', () => {
     test('Greet a single', () => {
-        // preparas
-        const greetResult = greet('Laura')
+        // preparar y ejecuta
+         const result = greet('cristian')
 
-        // resultado
-        expect(greetResult).toBe('Hello, Laura.');
+        // comprobacion
+        expect(result).toBe('Hello, cristian.')
     })
-    test('Handle nulls by using a stand-in', () => {
-        // preparas
-        const greetResult = greet(null)
+    test('Handle nulls', () => {
+        const result = greet(null)
 
-        // resultado
-        expect(greetResult).toBe('Hello, my friend.');
+        expect(result).toBe('Hello, my friend.')
     })
 })
