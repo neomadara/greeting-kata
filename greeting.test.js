@@ -2,15 +2,19 @@ const greet = require('./greeting')
 
 describe('Greeting Kata', () => {
     test('Greet a single', () => {
-        // preparar y ejecuta
-         const result = greet('cristian')
+        const name = 'Cris'
+        const result = 'Hello, Cris.'
 
-        // comprobacion
-        expect(result).toBe('Hello, cristian.')
+        const greetResult = greet(name)
+
+        expect(greetResult).toBe(result)
     })
     test('Handle nulls', () => {
-        const result = greet(null)
+        const name = null
+        const result = 'Hello, my friend.'
 
-        expect(result).toBe('Hello, my friend.')
+        const greetResult = greet(name)
+
+        expect(greetResult).toBe(result)
     })
 })
