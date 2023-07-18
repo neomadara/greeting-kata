@@ -1,6 +1,5 @@
 function greet(name) {
-    const greetText = name ?? 'my friend'
-    return  `Hello, ${greetText}.`
+    return name !== null ? `Hello, ${name}.` : `Hello, my friend.`
 }
 
 module.exports = greet;
