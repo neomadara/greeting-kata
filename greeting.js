@@ -1,5 +1,5 @@
 function greet(name) {
-    return name !== null ? `Hello, ${name}.` : `Hello, my friend.`
+    return `Hello, ${name}.`;
 }
 
 module.exports = greet;
